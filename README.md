@@ -1,7 +1,7 @@
 # 🏠 银发守护者 — Silver Guardian
 
 > 一款关于陪伴与数字包容的养成模拟游戏  
-> **联系作者：yuyue.23@intl.zju.edu.cn**
+> **联系作者：yuyue.23@intl.zju.edu.cn · 2582398576@qq.com**
 
 ---
 
@@ -113,4 +113,4 @@ elderly_care_game/
 
 ---
 
-*作者：yuyue.23@intl.zju.edu.cn*
+*作者：yuyue.23@intl.zju.edu.cn · 2582398576@qq.com*

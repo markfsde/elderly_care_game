@@ -96,6 +96,11 @@ const SceneEnding = {
             style="color:var(--accent3);text-decoration:none;font-weight:500;">
             ✉️ yuyue.23@intl.zju.edu.cn
           </a>
+          &nbsp;·&nbsp;
+          <a href="mailto:2582398576@qq.com"
+            style="color:var(--accent3);text-decoration:none;font-weight:500;">
+            📧 2582398576@qq.com
+          </a>
         </div>
         <div class="bottom-pad"></div>
       </div>
@@ -103,6 +108,7 @@ const SceneEnding = {
   },
 
   restart() {
+    if (typeof GameAudio !== 'undefined') GameAudio.sfx.scene();
     State.clearSave();
     Game.gotoScene('start');
   },

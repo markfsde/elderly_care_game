@@ -10,6 +10,17 @@ const Game = {
   init() {
     UI.init();
 
+    // 全局按钮音效
+    document.addEventListener('click', e => {
+      if (typeof GameAudio === 'undefined') return;
+      const t = e.target;
+      if (t.classList.contains('btn') || t.classList.contains('action-item') ||
+          t.classList.contains('fraud-option') || t.classList.contains('dialogue-choice') ||
+          t.classList.contains('food-item') || t.classList.contains('memory-card')) {
+        GameAudio.sfx.click();
+      }
+    });
+
     // 尝试载入存档（存档功能因安全限制可能不可用，容错处理）
     // 直接进入开始界面
     this.gotoScene('start');
@@ -17,6 +28,7 @@ const Game = {
 
   gotoScene(scene) {
     this.currentScene = scene;
+    if (typeof GameAudio !== 'undefined') GameAudio.sfx.scene();
     switch (scene) {
       case 'start':   SceneStart.render();   break;
       case 'weekday': SceneWeekday.render(); break;
