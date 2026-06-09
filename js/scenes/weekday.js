@@ -11,8 +11,8 @@ const SceneWeekday = {
     // 行动点指示器
     const actionDots = Array.from({length: limit}, (_, i) =>
       `<div style="width:10px;height:10px;border-radius:50%;
-        background:${i < actLeft ? 'var(--accent2)' : 'rgba(255,255,255,0.1)'};
-        border:1.5px solid ${i < actLeft ? 'var(--accent2)' : 'rgba(255,255,255,0.2)'};
+        background:${i < actLeft ? 'var(--accent2)' : 'rgba(180,100,40,0.12)'};
+        border:1.5px solid ${i < actLeft ? 'var(--accent2)' : 'rgba(180,100,40,0.2)'};
         box-shadow:${i < actLeft ? '0 0 6px var(--accent2)' : 'none'};
         transition:all 0.3s;"></div>`
     ).join('');
@@ -69,7 +69,7 @@ const SceneWeekday = {
       <div class="card slide-up">
         <div class="card-title">📞 远程连线 — 第 ${s.week} 周</div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;">
-          <div style="font-size:12px;color:var(--text-dim);">本周行动次数（任务+购物合计）</div>
+          <div style="font-size:12px;color:var(--text-dim);">本周行动次数</div>
           <div style="display:flex;align-items:center;gap:5px;">
             ${actionDots}
             <span style="font-size:12px;color:${actLeft>0?'var(--accent2)':'var(--accent)'};font-weight:600;margin-left:4px;">
@@ -78,12 +78,8 @@ const SceneWeekday = {
           </div>
         </div>
         ${actLeft === 0
-          ? `<div style="margin-top:8px;font-size:11px;color:var(--accent);background:rgba(233,69,96,0.1);padding:6px 10px;border-radius:6px;">
-               ⚡ 本周行动次数已用完，周末回去看看吧！
-             </div>`
-          : `<div style="margin-top:8px;font-size:11px;color:var(--text-dim);">
-               每次下单任务或购买道具消耗 1 次行动，合理规划！
-             </div>`
+          ? `<div style="margin-top:6px;font-size:11px;color:var(--accent);">⚡ 行动已用完，周末见！</div>`
+          : ''
         }
       </div>
 

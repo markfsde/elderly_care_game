@@ -12,9 +12,7 @@ const SceneStart = {
         <div class="start-sub">Silver Guardian · 陪伴是最长情的告白</div>
 
         <div class="start-story">
-          <p>暑假开始了。爷爷/奶奶独自在家，你在外地上学或工作。</p>
-          <p>这个夏天，你有 <strong>8 周</strong>时间。每周中只能做 <strong>3 次行动</strong>（布置任务或网购），周末回家带着 <strong>3 点行动力</strong>深度互动。</p>
-          <p>帮老人跨越数字鸿沟，找到属于银发一代的晚年价值——但真结局并不容易！</p>
+          <p>暑假开始，爷爷/奶奶独自在家。<strong>8 周</strong>内，用远程任务与周末陪伴帮老人跨越数字鸿沟——真结局并不容易！</p>
         </div>
 
         <div style="display:flex;flex-direction:column;gap:10px;width:100%;">
@@ -24,19 +22,14 @@ const SceneStart = {
           ${hasSave ? `<button class="btn btn-ghost btn-full" onclick="Game.continueSave()">📂 继续上次游戏</button>` : ''}
         </div>
 
-        <div style="margin-top:28px;width:100%;background:rgba(78,205,196,0.07);border:1px solid rgba(78,205,196,0.2);border-radius:10px;padding:12px 14px;">
-          <div style="font-size:10px;font-weight:600;color:var(--accent3);letter-spacing:1px;margin-bottom:5px;">📌 游戏提示</div>
-          <div style="font-size:11px;color:var(--text-dim);line-height:1.7;">
-            · 周中每周只有 3 次行动，购物和任务共享次数<br>
-            · 真结局需要数字、社交、健康三项<strong style="color:var(--text);">全部达标</strong><br>
-            · 遇到随机事件，道具与属性会影响结果<br>
-            · 每周末活动组合不同，尝试全部小游戏！
-          </div>
+        <div class="tips-grid">
+          <div class="tip-chip">📞 每周 3 次行动</div>
+          <div class="tip-chip">🏠 周末 3 点行动力</div>
+          <div class="tip-chip">🎲 随机事件 · 道具</div>
+          <div class="tip-chip">🏆 三项全达标解锁真结局</div>
         </div>
 
-        <div style="margin-top:20px;font-size:11px;color:var(--text-dim);text-align:center;line-height:1.9;">
-          包含：老年健康科普 · 适老化改造 · 防诈骗教育<br>
-          适合 10 分钟碎片化体验 · 点开即玩无需安装<br>
+        <div style="margin-top:16px;font-size:11px;color:var(--text-dim);text-align:center;line-height:1.9;">
           <a href="mailto:yuyue.23@intl.zju.edu.cn"
             style="color:var(--accent3);text-decoration:none;font-weight:500;">
             ✉️ yuyue.23@intl.zju.edu.cn

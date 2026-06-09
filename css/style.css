@@ -314,28 +314,31 @@ html, body {
 .start-title {
   font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--accent3), #a78bfa);
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 6px;
+  animation: slideUp 0.5s cubic-bezier(.4,0,.2,1) 0.1s both;
 }
 
 .start-sub {
   font-size: 13px;
   color: var(--text-dim);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   line-height: 1.6;
+  animation: slideUp 0.5s cubic-bezier(.4,0,.2,1) 0.2s both;
 }
 
 .start-story {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px;
-  margin-bottom: 28px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
   text-align: left;
   font-size: 13px;
+  animation: slideUp 0.5s cubic-bezier(.4,0,.2,1) 0.3s both;
   line-height: 1.8;
   color: var(--text-dim);
   width: 100%;
@@ -757,6 +760,113 @@ html, body {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+/* 弹入 */
+.pop-in {
+  animation: popIn 0.45s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* 交错滑入：action-grid 子项 */
+.action-grid .action-item {
+  animation: slideUp 0.32s cubic-bezier(.4,0,.2,1) both;
+}
+.action-grid .action-item:nth-child(1) { animation-delay: 0.04s; }
+.action-grid .action-item:nth-child(2) { animation-delay: 0.10s; }
+.action-grid .action-item:nth-child(3) { animation-delay: 0.16s; }
+.action-grid .action-item:nth-child(4) { animation-delay: 0.22s; }
+.action-grid .action-item:nth-child(5) { animation-delay: 0.28s; }
+.action-grid .action-item:nth-child(6) { animation-delay: 0.34s; }
+
+/* 图标悬停抖动 */
+.action-item:hover .ai-icon {
+  display: inline-block;
+  animation: wiggle 0.4s ease;
+}
+@keyframes wiggle {
+  0%,100% { transform: rotate(0); }
+  25%  { transform: rotate(-12deg); }
+  75%  { transform: rotate(12deg); }
+}
+
+/* 主按钮光泽扫过 */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -75%;
+  width: 50%; height: 200%;
+  background: rgba(255,255,255,0.18);
+  transform: skewX(-20deg);
+  animation: shimmer 3s infinite 1s;
+}
+@keyframes shimmer {
+  0%   { left: -75%; }
+  40%  { left: 120%; }
+  100% { left: 120%; }
+}
+
+/* 结局 emoji 旋转放大入场 */
+.ending-emoji {
+  animation: endingSpin 0.7s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes endingSpin {
+  from { opacity: 0; transform: scale(0.3) rotate(-30deg); }
+  to   { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+/* 属性条加载动画：先收缩再展开 */
+.stat-bar-fill {
+  animation: barGrow 0.8s cubic-bezier(.4,0,.2,1) both;
+}
+@keyframes barGrow {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+/* 卡片依次淡入 */
+.card {
+  animation: slideUp 0.3s cubic-bezier(.4,0,.2,1) both;
+}
+
+/* 提示芯片 */
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+.tip-chip {
+  background: rgba(180,100,40,0.08);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: center;
+  animation: popIn 0.4s cubic-bezier(.34,1.56,.64,1) both;
+}
+.tip-chip:nth-child(1) { animation-delay: 0.1s; }
+.tip-chip:nth-child(2) { animation-delay: 0.18s; }
+.tip-chip:nth-child(3) { animation-delay: 0.26s; }
+.tip-chip:nth-child(4) { animation-delay: 0.34s; }
+
+/* 购物项滑入 */
+.shop-item {
+  animation: slideUp 0.28s cubic-bezier(.4,0,.2,1) both;
+}
+.shop-item:nth-child(1) { animation-delay: 0.05s; }
+.shop-item:nth-child(2) { animation-delay: 0.12s; }
+.shop-item:nth-child(3) { animation-delay: 0.19s; }
+.shop-item:nth-child(4) { animation-delay: 0.26s; }
+.shop-item:nth-child(5) { animation-delay: 0.33s; }
 
 /* ============================================================
    滚动底部占位

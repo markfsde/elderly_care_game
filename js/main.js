@@ -28,7 +28,6 @@ const Game = {
 
   gotoScene(scene) {
     this.currentScene = scene;
-    if (typeof GameAudio !== 'undefined') GameAudio.sfx.scene();
     switch (scene) {
       case 'start':   SceneStart.render();   break;
       case 'weekday': SceneWeekday.render(); break;

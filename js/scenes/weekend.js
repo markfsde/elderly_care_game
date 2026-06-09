@@ -38,9 +38,8 @@ const SceneWeekend = {
 
       <div class="card slide-up" style="margin-top:-12px;">
         <div class="card-title">🏠 周末回家 — 行动点 ⚡${s.ap}</div>
-        <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">
-          每项活动消耗 1 ⚡，深度互动触发小游戏，通关有额外加成。
-          本周活动组合与上周不同！
+        <div style="font-size:12px;color:var(--text-dim);">
+          每项消耗 1 ⚡ · 通关小游戏有额外加成
         </div>
       </div>
 
