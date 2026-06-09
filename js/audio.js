@@ -72,7 +72,7 @@ const GameAudio = (() => {
     }
 
     // 下一段
-    bgmScheduler = setTimeout(scheduleBGM, (barLen + 0.1) * 1000);
+    bgmScheduler = setTimeout(scheduleBGM, (barLen + 0.05) * 1000);
   }
 
   function startBGM() {
