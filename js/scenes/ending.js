@@ -108,7 +108,6 @@ const SceneEnding = {
   },
 
   restart() {
-    if (typeof GameAudio !== 'undefined') GameAudio.sfx.scene();
     State.clearSave();
     Game.gotoScene('start');
   },

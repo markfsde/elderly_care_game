@@ -54,12 +54,10 @@ const MgFraud = {
 
     if (q.options[idx].correct) {
       options[idx].classList.add('correct');
-      if (typeof GameAudio !== 'undefined') GameAudio.sfx.select();
       UI.toast('✅ ' + q.explanation, 2500);
       this.correctCount++;
     } else {
       options[idx].classList.add('wrong');
-      if (typeof GameAudio !== 'undefined') GameAudio.sfx.fail();
       // 标出正确答案
       q.options.forEach((o, i) => { if (o.correct) options[i].classList.add('correct'); });
       UI.toast('❌ ' + q.explanation, 2500);
@@ -78,7 +76,6 @@ const MgFraud = {
   showResult() {
     const total = GameData.fraudQuestions.length;
     const pass = this.correctCount >= 2;
-    if (typeof GameAudio !== 'undefined') { pass ? GameAudio.sfx.success() : GameAudio.sfx.fail(); }
     const bonus = pass ? { digital: +20 } : { digital: +8 };
     State.applyEffect({ ...this.activity.baseEffect, ...bonus });
 
