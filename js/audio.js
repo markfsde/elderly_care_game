@@ -144,7 +144,7 @@ const GameAudio = (() => {
   function onFirstInteraction() {
     init();
     if (ctx.state === 'suspended') ctx.resume();
-    startBGM();
+    // BGM 由各场景按需启动，此处不自动播放
     document.removeEventListener('click', onFirstInteraction);
     document.removeEventListener('touchstart', onFirstInteraction);
   }
