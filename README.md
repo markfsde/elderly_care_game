@@ -15,58 +15,8 @@
 - 🎲 **随机事件**：诈骗电话、浴室险情、社区邀约……道具和属性影响结果
 - 🏆 **三种结局**：坏结局 / 普通结局 / 银发弄潮儿（真结局需三项属性全达标）
 
----
 
-## 🚀 GitHub Pages 部署步骤
 
-### 第一步：在 GitHub 新建仓库
-
-1. 打开 [github.com](https://github.com) → 右上角 **New repository**
-2. Repository name 填写：`elderly_care_game`
-3. 勾选 **Public**（GitHub Pages 免费版需要公开仓库）
-4. **不要**勾选 "Initialize this repository with a README"（已有本地文件）
-5. 点击 **Create repository**
-
-### 第二步：上传代码
-
-**方式 A — 网页直接上传（最简单）**
-
-1. 进入新建的仓库页面
-2. 点击 **uploading an existing file** 链接
-3. 把 `game/` 文件夹里的**所有内容**（包括 `index.html`、`css/`、`js/`、`.nojekyll`）拖入上传框
-4. 提交：Commit message 填 `Initial commit`，点 **Commit changes**
-
-> ⚠️ 注意：需要把 `css/` 和 `js/` 子文件夹里的文件也全部选中上传
-
-**方式 B — Git 命令行**
-
-```bash
-cd /path/to/game
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/你的用户名/elderly_care_game.git
-git push -u origin main
-```
-
-### 第三步：开启 GitHub Pages
-
-1. 进入仓库 → 点击 **Settings**（顶部标签）
-2. 左侧菜单找到 **Pages**
-3. Source 选择：**Deploy from a branch**
-4. Branch 选择：**main** / **(root)**
-5. 点击 **Save**
-
-### 第四步：访问游戏
-
-约 1~3 分钟后，页面会显示你的游戏网址：
-
-```
-https://你的用户名.github.io/elderly_care_game/
-```
-
-复制该链接即可分享，评委点开即玩 ✅
 
 ---
 
