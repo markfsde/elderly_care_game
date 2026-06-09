@@ -1,9 +1,9 @@
 # 🏠 银发守护者 — Silver Guardian
 
-> 一款关于陪伴的养成模拟游戏  
-> 以腾讯云黑客松 · 游戏开发挑战赛 2026 为灵感，耗时1天vibe coding完成
+> 一款关于陪伴的养成模拟游戏 
 
-> **联系作者：2582398576@qq.com**
+> **联系作者：2582398576@qq.com / yuyue.23@intl.zju.edu.cn**
+
 
 
 ---
@@ -65,4 +65,4 @@ elderly_care_game/
 
 ---
 
-*作者：2582398576@qq.com*
+*作者：2582398576@qq.com / yuyue.23@intl.zju.edu.cn*
