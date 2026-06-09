@@ -30,11 +30,6 @@ const SceneStart = {
         </div>
 
         <div style="margin-top:16px;font-size:11px;color:var(--text-dim);text-align:center;line-height:1.9;">
-          <a href="mailto:yuyue.23@intl.zju.edu.cn"
-            style="color:var(--accent3);text-decoration:none;font-weight:500;">
-            ✉️ yuyue.23@intl.zju.edu.cn
-          </a>
-          &nbsp;·&nbsp;
           <a href="mailto:2582398576@qq.com"
             style="color:var(--accent3);text-decoration:none;font-weight:500;">
             📧 2582398576@qq.com

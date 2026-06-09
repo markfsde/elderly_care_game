@@ -92,11 +92,6 @@ const SceneEnding = {
         <div style="margin-top:24px;font-size:11px;color:var(--text-dim);text-align:center;line-height:1.9;">
           感谢体验「银发守护者」<br>
           关注老年人数字融合，从身边开始<br>
-          <a href="mailto:yuyue.23@intl.zju.edu.cn"
-            style="color:var(--accent3);text-decoration:none;font-weight:500;">
-            ✉️ yuyue.23@intl.zju.edu.cn
-          </a>
-          &nbsp;·&nbsp;
           <a href="mailto:2582398576@qq.com"
             style="color:var(--accent3);text-decoration:none;font-weight:500;">
             📧 2582398576@qq.com

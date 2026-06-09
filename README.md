@@ -3,7 +3,8 @@
 > 一款关于陪伴与数字包容的养成模拟游戏  
 > 腾讯云黑客松 · 游戏开发挑战赛 2026 参赛作品，耗时1天vibe coding完成
 
-> **联系作者：yuyue.23@intl.zju.edu.cn · 2582398576@qq.com**
+> **联系作者：2582398576@qq.com**
+
 
 ---
 
@@ -64,4 +65,4 @@ elderly_care_game/
 
 ---
 
-*作者：yuyue.23@intl.zju.edu.cn · 2582398576@qq.com*
+*作者：2582398576@qq.com*
