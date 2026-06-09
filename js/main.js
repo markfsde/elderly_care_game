@@ -12,12 +12,13 @@ const Game = {
 
     // 尝试载入存档（存档功能因安全限制可能不可用，容错处理）
     // 直接进入开始界面
-    this.gotoScene('start');
+    this.gotoScene('intro');
   },
 
   gotoScene(scene) {
     this.currentScene = scene;
     switch (scene) {
+      case 'intro':   SceneIntro.render();   break;
       case 'start':   SceneStart.render();   break;
       case 'weekday': SceneWeekday.render(); break;
       case 'weekend': SceneWeekend.render(); break;
